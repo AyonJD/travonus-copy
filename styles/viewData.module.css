@@ -1,0 +1,50 @@
+.popup_wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup_content {
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  max-height: 500px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cross_icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.margin_top {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .popup_content {
+    width: 90%;
+  }
+}
+
+.active_button {
+  background-color: #7122ff;
+  color: #fff;
+  border: 1px solid #7122ff;
+  transition: all 0.3s ease-in-out;
+}

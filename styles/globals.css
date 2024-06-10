@@ -1,0 +1,1170 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('/Sarabun-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth !important;
+}
+
+#__next {
+  height: 100%;
+  /* color: rgba(255, 255, 255, 0.541); */
+}
+
+.my-swal-title {
+  font-family: 'Sarabun';
+  font-size: 20px;
+  font-weight: normal;
+}
+
+code {
+  font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+
+code[class*='language-'] {
+  padding: 0;
+}
+
+.no_wrap {
+  white-space: nowrap !important;
+}
+
+.hover_error:hover {
+  background-color: #8a0d1d !important;
+}
+
+/* Picker */
+.picker {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 2.3em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 90%;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 9px 14px;
+  border: 1px solid rgba(180, 180, 180, 0.705);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Focus on .picker */
+.picker:focus {
+  outline: none;
+  border: 2px solid #9155fd;
+}
+
+/* Add client page */
+.upload_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.upload_button {
+  height: 54px;
+  margin-left: 5px !important;
+  font-size: 12px !important;
+  white-space: nowrap !important;
+}
+
+.search_button_height {
+  height: 54px;
+  width: 200px;
+  font-weight: 800;
+}
+
+/* Client information */
+/* Visa */
+::-webkit-file-upload-button {
+  display: none;
+}
+
+.hide {
+  color: transparent;
+}
+
+/* Form services colors */
+/* Header colors for services */
+.initial {
+  color: #9155fd;
+  border: 1px solid rgba(145, 85, 253, 0.5) !important;
+}
+
+.visa_color {
+  color: #5330c1 !important;
+}
+
+.visa_background {
+  background-color: #5330c1 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.reservation_color {
+  color: #4233ff !important;
+}
+
+.reservation_background {
+  background-color: #4233ff !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.insurance_color {
+  color: #3176a8 !important;
+}
+
+.insurance_background {
+  background-color: #3176a8 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.hotel_color {
+  color: #0d2376 !important;
+}
+
+.hotel_background {
+  background-color: #0d2376 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.local_color {
+  color: #30a2c1 !important;
+}
+
+.local_background {
+  background-color: #30a2c1 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.airport_color {
+  color: #307dc1 !important;
+}
+
+.airport_background {
+  background-color: #307dc1 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.air_ambulance_color {
+  color: #3034c1 !important;
+}
+
+.air_ambulance_background {
+  background-color: #3034c1 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.opd_color {
+  color: #0c7194 !important;
+}
+
+.opd_background {
+  background-color: #0c7194 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.ipd_color {
+  color: #350950 !important;
+}
+
+.ipd_background {
+  background-color: #350950 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.telimedicine_color {
+  color: #382077 !important;
+}
+
+.telimedicine_background {
+  background-color: #382077 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.treatment_color {
+  color: #1f1f73 !important;
+}
+
+.treatment_background {
+  background-color: #1f1f73 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.interpreter_background {
+  background-color: #2b64c8 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+.execursion_color {
+  color: #382077 !important;
+}
+
+.execursion_background {
+  background-color: #382077 !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+
+/* KPI */
+.table {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Loader */
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #804bdf;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* table cell devider */
+.cell_devider {
+  border-right: 1px solid #e0e0e0 !important;
+}
+
+.spacer_left {
+  margin-left: 10px !important;
+}
+
+.spacer_right {
+  margin-right: 10px !important;
+}
+
+/* Popup */
+.popup_wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 57%;
+  max-height: 500px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.popup_bg {
+  background-image: url('/images/first_bg_popup.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cross_icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.margin_top {
+  margin-top: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .popup_content {
+    width: 90%;
+  }
+}
+
+/* Popup table */
+.fare_bg {
+  background-color: #cfcfcf;
+}
+
+.tax_bg {
+  background-color: #f8d7f8;
+}
+
+.payable_bg {
+  background-color: #eef5ce;
+}
+
+/* Onboarding Alt */
+.custom_focus:focus {
+  outline: none;
+  border: 2px solid #9155fd !important;
+}
+
+/* Clinet List table */
+.table_row_bg {
+  background-color: #f0966c;
+}
+
+.custom_button {
+  color: #fff !important;
+}
+
+/* Current Accounts */
+.word_wrap {
+  /* make line brake after white space */
+  white-space: pre-wrap;
+}
+
+.customBorder {
+  border: 1px solid rgba(145, 85, 253, 0.5);
+  /* margin-left: auto !important;
+  margin-right: auto !important; */
+  align-self: center !important;
+  border-radius: 5px;
+}
+
+.padding {
+  padding: 1.2rem;
+}
+
+.marginTopLeft {
+  /* margin-left: -.5rem !important;
+  margin-top: -.5rem !important; */
+  padding-left: 0.6rem !important;
+  padding-top: 0.6rem !important;
+}
+
+.css-1ii56bk-MuiListItem-root {
+  /* padding-right: 100px !important; */
+}
+
+.css-1t5692p-MuiListItemIcon-root {
+  /* padding-right: 100px !important; */
+}
+
+.grid_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary_color {
+  color: rgb(144, 85, 253) !important;
+}
+
+.align_center {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconImage {
+  /* width: 50px; */
+  height: 55px;
+  margin: 0 4px;
+}
+
+/* LeadDetails Popup */
+.main_popup {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  max-height: 200px;
+  overflow: auto;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 1000;
+}
+
+/* Print */
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.print_button {
+  color: #fff !important;
+  width: 140px;
+}
+
+.right_print {
+  color: #9155fd !important;
+}
+
+.right_print:hover {
+  color: #fff !important;
+  background-color: #9155fd !important;
+}
+.merge_invoice {
+  color: #8347a4 !important;
+}
+
+.right_print:hover {
+  color: #fff !important;
+  background-color: rgb(119, 45, 255) !important;
+}
+
+.modal-content {
+  overflow: auto;
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  /* set a high z-index value */
+}
+
+/* Invoice start------------------------> */
+.invoice_popup {
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+}
+
+.brand_name {
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0 40px;
+  font-family: 'Teko', sans-serif !important;
+  color: #000000dc;
+}
+
+.sub_name {
+  text-align: left;
+  margin: 0 auto;
+  margin-top: -5px;
+  padding: 0 40px;
+  font-family: 'Teko', sans-serif !important;
+  color: #000000dc;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.office_address {
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.office_address h5 {
+  margin: 0;
+  word-spacing: 1.2px;
+  font-size: 0.8rem !important;
+  margin-top: 1px !important;
+  font-weight: 600;
+  font-family: 'Saira Condensed', sans-serif !important;
+  color: #42197e;
+}
+
+.invoice_header {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.invoice_span {
+  font-size: 15px !important;
+  border-bottom: 1px dotted #000;
+  display: inline-block;
+}
+
+.full_width {
+  width: 70% !important;
+}
+
+.width_controller {
+  width: 45% !important;
+}
+
+.no-print {
+  display: none;
+}
+
+.inv_id_section {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin: 30px 0;
+  align-items: flex-start;
+}
+
+.invoice_to_left {
+  width: 50%;
+}
+
+.invoice_to_left h3 {
+  font-family: 'Saira Condensed', sans-serif !important;
+  font-size: 0.9rem;
+  margin: 0;
+  color: #000000dc !important;
+}
+
+.invoice_to_left .client_name {
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.invoice_to_left h5 {
+  margin: 0;
+  word-spacing: 1.2px;
+  font-size: 0.8rem !important;
+  margin-top: 1px !important;
+  font-weight: 600;
+  font-family: 'Saira Condensed', sans-serif !important;
+  letter-spacing: 1px;
+}
+.invoice_id {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.invoice_id h3,
+h5 {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.invoice_id_section_right {
+  width: 50%;
+  /* margin-left: 180px; */
+  white-space: nowrap !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.invoice_id_section_right .invoice_id_header {
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap !important;
+  color: #000000dc !important;
+}
+
+.invoice_date {
+  letter-spacing: 1.5px !important;
+}
+
+.invoice_table {
+  border-collapse: unset !important;
+  /* border: 1px solid #42197e !important; */
+  z-index: 10;
+}
+
+.invoice_table_head {
+  background-color: #42197e !important;
+}
+
+.invoice_table_head th {
+  color: #fff !important;
+}
+
+.table_cell_no_border {
+  /* border: 1px solid #42197e !important; */
+}
+
+/* Print media styles */
+@media print {
+  .table_cell_no_border {
+    /* border: 1px solid #42197e !important; */
+  }
+}
+
+.invoice_footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_footer_section {
+  width: 50%;
+}
+
+.right_footer_section {
+  width: 40%;
+}
+
+.left_footer_section > h5 {
+  margin-bottom: 10px;
+}
+
+.left_footer_section p {
+  font-size: 0.8rem !important;
+  margin-top: 1px !important;
+  font-weight: 500;
+}
+
+.sub_total_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.sub_total {
+  background-color: #d53383;
+  padding: 4px 10px !important;
+  color: #fff;
+  margin: 3px 0 !important;
+  width: 35%;
+  border-radius: 8px;
+  text-align: right;
+  font-family: 'Saira Condensed', sans-serif !important;
+}
+
+.sub_total_m {
+  background-color: #d53383;
+  padding: 4px 10px !important;
+  color: #fff;
+  margin: 3px 0 !important;
+  width: 75% !important;
+  border-radius: 8px;
+  text-align: right;
+  font-family: 'Saira Condensed', sans-serif !important;
+  white-space: nowrap !important;
+}
+
+.footer_header {
+  font-family: 'Saira Condensed', sans-serif !important;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Orange line for invoice */
+
+.invoice_header_wrapper {
+  background-color: #d53383;
+  margin: 0 40px !important;
+  margin-top: 30px !important;
+  border-radius: 5px;
+  height: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.invoice_header {
+  font-family: 'Saira Condensed', sans-serif !important;
+  border-bottom: 0;
+  font-weight: 500;
+  color: #000000dc;
+  font-size: 2.5rem;
+  width: fit-content;
+  background-color: #fff;
+  transform: translateX(180%) !important;
+  margin-bottom: -17px;
+  padding: 0 10px;
+}
+
+.footer_border_wrapper {
+  /* background-color: rgb(255, 196, 0); */
+  margin: 30px 40px !important;
+  height: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer_border{
+  background-color: #d53383;
+  margin-top: 30px !important;
+  border-radius: 5px;
+  height: 10px;
+}
+
+.authorized_sign {
+  text-decoration: overline;
+  font-family: 'Saira Condensed', sans-serif !important;
+  border-bottom: 0;
+  font-weight: 600;
+  color: #000000dc;
+  font-size: 0.8rem;
+  width: fit-content;
+  background-color: #fff;
+  transform: translateX(-50%) !important;
+  padding: 10px;
+  margin-top: -8px;
+  /* margin-bottom: -0.1px; */
+}
+
+/* Invoice End------------------------------> */
+
+/* Money receipt start--------------------------------> */
+.receipt_brand_name {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0 40px;
+  font-family: 'Teko', sans-serif !important;
+  color: rgb(255, 145, 0);
+}
+
+#receipt_table {
+  background-color: #d533841a;
+}
+
+.receipt_sub_name {
+  text-align: center;
+}
+
+.receipt_address_section {
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.receipt_address {
+  font-size: 0.8rem !important;
+  margin-top: 1px !important;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.receipt_email {
+  font-size: 0.8rem !important;
+  margin-top: -10px !important;
+  font-weight: 500;
+  padding: 0 40px;
+}
+
+.receipt_id_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin: 10px 0;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.receipt_id_wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* width: 100%; */
+}
+
+.receipt_table_head {
+  background-color: #d53383 !important;
+}
+
+.receipt_text {
+  color: #42197e;
+  font-size: 1.5rem;
+  margin-left: -60px !important;
+}
+
+.receipt_id_header {
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000000dc !important;
+}
+
+.receipt_date {
+  margin-left: 100px;
+}
+
+.receipt_footer {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.receipt_footer .receipt_terms {
+  /* margin-left: 20px; */
+}
+
+.receipt_footer h5 {
+  color: #000000dc;
+  padding-left: 10px;
+}
+
+.relative {
+  position: relative;
+  z-index: 10;
+}
+
+.margin_horizontal {
+  margin: 0 40px;
+  position: absolute;
+  width: 92%;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.right_footer_section_receipt {
+  width: 30%;
+}
+
+.receipt_sub_total {
+  background-color: #42197e !important;
+  width: 60%;
+}
+
+/* Money receipt End---------------------------------> */
+
+/* Tooltip for pie chart */
+
+.tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  animation: fadein 0.3s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.deleteButton {
+  color: #fff !important;
+  background-color: #901f2f !important;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  width: 100px;
+}
+
+/* SVG animation */
+/* .st0 {
+  fill: #42197e;
+}
+
+.st1 {
+  fill: #d53383;
+} */
+
+#welcome_cura {
+  animation: fill 1s ease forwards 4.8s;
+}
+
+#welcome_cura path {
+  stroke: #42197e;
+  stroke-width: 3;
+}
+
+#welcome_cura path:nth-child(1) {
+  stroke-dasharray: 466.4;
+  stroke-dashoffset: 466.4;
+  animation: line-anim 2s ease forwards 1s;
+}
+
+#welcome_cura path:nth-child(2) {
+  stroke-dasharray: 710.97;
+  stroke-dashoffset: 710.97;
+  animation: line-anim 2s ease forwards 1.4s;
+}
+
+#welcome_cura path:nth-child(3) {
+  stroke-dasharray: 668.9;
+  stroke-dashoffset: 668.9;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+#welcome_cura path:nth-child(4) {
+  stroke-dasharray: 640.17;
+  stroke-dashoffset: 640.17;
+  animation: line-anim 2s ease forwards 2.2s;
+}
+
+#welcome_cura path:nth-child(5) {
+  stroke-dasharray: 707.33;
+  stroke-dashoffset: 707.33;
+  animation: line-anim 2s ease forwards 2.6s, fillLogo 1s ease forwards 4.8s;
+}
+
+#welcome_cura path:nth-child(6) {
+  stroke-dasharray: 706.87;
+  stroke-dashoffset: 706.87;
+  animation: line-anim 2s ease forwards 3s, fillLogo 1s ease forwards 4.8s;
+}
+
+#welcome_cura path:nth-child(7) {
+  stroke-dasharray: 614.87;
+  stroke-dashoffset: 614.87;
+  animation: line-anim 2s ease forwards 3.4s;
+}
+
+#welcome_cura path:nth-child(8) {
+  stroke-dasharray: 599.9;
+  stroke-dashoffset: 599.9;
+  animation: line-anim 2s ease forwards 3.8s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #42197e;
+  }
+}
+
+@keyframes fillLogo {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #d53383;
+    stroke: #d53383;
+  }
+}
+
+/* Text svg */
+.text_svg text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login */
+/* Define the animation for the up and down movement */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust this value as needed */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveUpDown2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust this value as needed */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to your images */
+.image1 {
+  animation: moveUpDown 2s infinite; /* Adjust the duration as needed */
+  animation-direction: alternate; /* Makes the animation go up and down */
+}
+
+.image2 {
+  animation: moveUpDown2 3s infinite; /* Adjust the duration as needed */
+  animation-direction: alternate; /* Makes the animation go up and down */
+}
+
+.invoice_button {
+  width: 200px !important;
+}
+
+/* BG image for admin and user */
+.admin_bg {
+  background-image: url('/images/admin_bg.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: '100%';
+  display: 'flex';
+}
+
+.user_bg {
+  background-image: url('/images/user_bg.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: '100%';
+  display: 'flex';
+}
+
+/* vartical sidebar */
+.admin_sidebar {
+  background-image: linear-gradient(to bottom, #3c0d70, #5f1b81) !important;
+}
+
+.user_sidebar {
+  background-color: #f4f5fa !important;
+}
+
+.css-b8de9x-MuiListSubheader-root .MuiDivider-root:after,
+.MuiDivider-root:before,
+.css-b8de9x-MuiListSubheader-root hr {
+  border-color: #9a7ece !important;
+}
+.admin_text {
+  color: #fff !important;
+}
+
+.user_text {
+  color: #333e51 !important;
+}
+
+.heading_drop_shadow {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media print {
+  body {
+    width: 100%;
+  }
+  .invoice_popup {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
