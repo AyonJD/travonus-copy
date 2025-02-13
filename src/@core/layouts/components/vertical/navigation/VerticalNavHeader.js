@@ -43,7 +43,7 @@ const VerticalNavHeader = props => {
   return (
     <MenuHeaderWrapper
       className="nav-header"
-      sx={{ pl: 6, zIndex: 50000, }}
+      sx={{ pl: 6, zIndex: 50000 }}
       style={{ marginBottom: '-10px' }}
     >
       {userVerticalNavMenuBranding ? (
@@ -53,10 +53,19 @@ const VerticalNavHeader = props => {
           <StyledLink>
             <HeaderTitle variant="h6" sx={{ ml: 3, pt: 0, width: '90%' }}>
               {/* {themeConfig.templateName} */}
-                <Image src={logo} alt="cura logo" />
-                <Typography variant="body2" sx={{fontSize: '14px', marginTop: '-10px', paddingBottom: '25px', fontWeight:600, textAlign:'center', width: '100%'}}>
-                  CRM Solution
-                </Typography>
+              {/* <Image src={logo} alt="cura logo" /> */}
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: '18px',
+                  fontWeight: 600,
+                  textAlign: 'center',
+                  width: '100%',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                CRM Solution
+              </Typography>
             </HeaderTitle>
           </StyledLink>
         </Link>

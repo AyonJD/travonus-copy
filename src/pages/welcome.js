@@ -7,7 +7,21 @@ import useRedirectAfterSomeSeconds from 'src/@core/hooks/useRedirectAfterSomeSec
 import BlankLayout from 'src/@core/layouts/BlankLayout'
 import { loadStorage } from 'src/Utils/func'
 import bgImage from 'public/images/av.png'
-import logo from 'public/travonus.png'
+
+// Variants for animating each letter of "CMS"
+const letterAnimation = {
+  hidden: { opacity: 0, y: -50, scale: 0.5 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate: [0, 10, -10, 0], // Add a slight bounce effect
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+}
 
 const WelcomePage = () => {
   const user = loadStorage('cura_user')
@@ -75,13 +89,28 @@ const WelcomePage = () => {
           alignItems: 'center',
         }}
       >
-        <motion.img
-          src={logo.src}
-          alt="logo"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
-          style={{ width: '350px' }}
-        />
+        {/* Animated Text "CMS" */}
+        <Box
+          sx={{
+            display: 'flex',
+            fontSize: '4rem',
+            fontWeight: 'bold',
+            fontFamily: 'monospace',
+            letterSpacing: '0.2rem',
+          }}
+        >
+          {['C', 'R', 'M'].map((letter, index) => (
+            <motion.span
+              key={index}
+              variants={letterAnimation}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: index * 0.3 }} // Staggered animation
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </Box>
         <motion.span
           initial={{ opacity: 0, y: 50 }}
           animate={{

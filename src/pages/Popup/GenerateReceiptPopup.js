@@ -17,12 +17,12 @@ const GenerateReceiptPopup = ({ setOpenPopup, services }) => {
   )
 
   const [manualReceiptData, setManualReceiptData] = useState({
-    name: 'Travonus Limited',
+    name: 'CRM Solution',
     phone: '01323581330',
     email: 'mytravonus@gmail.com',
     address: 'Sufi Villa | level 3 | R- 11A | H- 78 | Dhanmondi | Dhaka- 1209',
     terms:
-      '<p><strong style="color: rgb(0, 176, 240);">Travonus | </strong><strong style="color: rgb(112, 48, 160);">Estern Bank Limited | </strong><span style="color: rgb(112, 48, 160);">Satmasjid Road Branch</span><strong style="color: rgb(112, 48, 160);"> |</strong><strong style="color: rgb(0, 176, 240);"> a/c no 108 107 000 1404</strong><span style="color: rgb(0, 176, 240);">&nbsp;</span></p><p><strong style="color: rgb(0, 176, 240);">Health Park Comunication| </strong><strong style="color: rgb(112, 48, 160);">Bank Asia – MCB Banani - Branch |</strong><strong style="color: rgb(0, 176, 240);"> a/c no 01233054714</strong><span style="color: rgb(0, 176, 240);">&nbsp;</span></p><p><strong style="color: rgb(0, 176, 240);">Health Park Comunication| </strong><strong style="color: rgb(112, 48, 160);">United Commercial Bank | </strong><span style="color: rgb(112, 48, 160);">Satmasjid Road Branch</span><strong style="color: rgb(112, 48, 160);"> |</strong><strong style="color: rgb(0, 176, 240);"> a/c no 02222 1010 000 11214</strong><span style="color: rgb(0, 176, 240);">&nbsp;</span></p>',
+      '<p><strong style="color: rgb(0, 176, 240);">CRM Solution | </strong><strong style="color: rgb(112, 48, 160);">Estern Bank Limited | </strong><span style="color: rgb(112, 48, 160);">Satmasjid Road Branch</span><strong style="color: rgb(112, 48, 160);"> |</strong><strong style="color: rgb(0, 176, 240);"> a/c no 108 107 000 1404</strong><span style="color: rgb(0, 176, 240);">&nbsp;</span></p><p><strong style="color: rgb(0, 176, 240);">Health Park Comunication| </strong><strong style="color: rgb(112, 48, 160);">Bank Asia – MCB Banani - Branch |</strong><strong style="color: rgb(0, 176, 240);"> a/c no 01233054714</strong><span style="color: rgb(0, 176, 240);">&nbsp;</span></p><p><strong style="color: rgb(0, 176, 240);">Health Park Comunication| </strong><strong style="color: rgb(112, 48, 160);">United Commercial Bank | </strong><span style="color: rgb(112, 48, 160);">Satmasjid Road Branch</span><strong style="color: rgb(112, 48, 160);"> |</strong><strong style="color: rgb(0, 176, 240);"> a/c no 02222 1010 000 11214</strong><span style="color: rgb(0, 176, 240);">&nbsp;</span></p>',
   })
 
   const handleReceiptData = (e, index) => {

@@ -116,7 +116,7 @@ const navigation = () => {
 
   const supervisorArray = [
     {
-      sectionTitle: 'TRAVONUS',
+      sectionTitle: 'CRM',
     },
     {
       title: 'Lead Assign',
@@ -171,7 +171,7 @@ const navigation = () => {
 
   const executiveArray = [
     {
-      sectionTitle: 'TRAVONUS',
+      sectionTitle: 'CRM',
     },
     {
       title: 'Lead Status',
@@ -226,7 +226,7 @@ const navigation = () => {
 
   const accountArray = [
     {
-      sectionTitle: 'TRAVONUS',
+      sectionTitle: 'CRM',
     },
 
     // {

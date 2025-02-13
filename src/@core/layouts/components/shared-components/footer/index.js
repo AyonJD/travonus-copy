@@ -42,7 +42,7 @@ const Footer = props => {
           }),
         }}
       >
-        TRAVONUS CRM Solution , Developed by Syntax Systems
+        CRM Solution, Developed by Syntax Systems
       </Box>
     </Box>
   )
