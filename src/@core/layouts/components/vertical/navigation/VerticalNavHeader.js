@@ -64,7 +64,7 @@ const VerticalNavHeader = props => {
                   whiteSpace: 'nowrap',
                 }}
               >
-                CRM Solution
+                Tourism CRM
               </Typography>
             </HeaderTitle>
           </StyledLink>

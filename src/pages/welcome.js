@@ -125,7 +125,7 @@ const WelcomePage = () => {
             marginTop: '-15px',
           }}
         >
-          CRM Solution
+          Tourism CRM
         </motion.span>
       </div>
       <motion.svg

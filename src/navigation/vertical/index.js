@@ -116,7 +116,7 @@ const navigation = () => {
 
   const supervisorArray = [
     {
-      sectionTitle: 'CRM',
+      sectionTitle: 'Tourism CRM',
     },
     {
       title: 'Lead Assign',
@@ -171,7 +171,7 @@ const navigation = () => {
 
   const executiveArray = [
     {
-      sectionTitle: 'CRM',
+      sectionTitle: 'Tourism CRM',
     },
     {
       title: 'Lead Status',
@@ -226,7 +226,7 @@ const navigation = () => {
 
   const accountArray = [
     {
-      sectionTitle: 'CRM',
+      sectionTitle: 'Tourism CRM',
     },
 
     // {

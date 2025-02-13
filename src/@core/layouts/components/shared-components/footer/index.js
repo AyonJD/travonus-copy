@@ -42,7 +42,7 @@ const Footer = props => {
           }),
         }}
       >
-        CRM Solution, Developed by Syntax Systems
+        Tourism CRM, Developed by Syntax Systems
       </Box>
     </Box>
   )

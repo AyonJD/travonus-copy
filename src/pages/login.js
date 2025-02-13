@@ -168,7 +168,7 @@ const LoginPage = () => {
                     fontSize: '2.5rem !important',
                   }}
                 >
-                  CRM
+                  Tourism CRM
                 </Typography>
                 {/* <Image src={logo} alt="cura logo" /> */}
               </Box>
