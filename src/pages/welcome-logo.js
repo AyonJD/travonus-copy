@@ -60,7 +60,7 @@ const LogoPage = () => {
           letterSpacing: '0.2rem',
         }}
       >
-        {['C', 'R', 'M'].map((letter, index) => (
+        {['E', 'A', 'S', 'Y', 'B', 'I', 'Z'].map((letter, index) => (
           <motion.span
             key={index}
             variants={letterAnimation}
@@ -80,7 +80,7 @@ const LogoPage = () => {
         animate="visible"
       >
         <Typography variant="h5" sx={{ mt: 4, color: 'text.secondary' }}>
-          Welcome to the Customer Relationship Management System
+          Welcome to the EasyBiz Tour Management Solution
         </Typography>
       </motion.div>
 

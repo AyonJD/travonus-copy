@@ -156,19 +156,32 @@ const LoginPage = () => {
                   width: '50%',
                   margin: '0 auto',
                   mb: 6,
+                  flexDirection: 'column',
+                  textAlign: 'center',
                 }}
               >
                 <Typography
                   variant="h4"
                   sx={{
-                    ml: 3,
                     lineHeight: 1,
                     fontWeight: 600,
                     textTransform: 'uppercase',
                     fontSize: '2.5rem !important',
                   }}
                 >
-                  Tourism CRM
+                  EasyBiz
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    lineHeight: 1,
+                    fontWeight: 600,
+                    fontSize: '1rem !important',
+                    whiteSpace: 'nowrap',
+                    mt:2
+                  }}
+                >
+                  Tour Management Solution
                 </Typography>
                 {/* <Image src={logo} alt="cura logo" /> */}
               </Box>

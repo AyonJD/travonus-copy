@@ -99,7 +99,7 @@ const WelcomePage = () => {
             letterSpacing: '0.2rem',
           }}
         >
-          {['C', 'R', 'M'].map((letter, index) => (
+          {['E', 'A', 'S', 'Y', 'B', 'I', 'Z'].map((letter, index) => (
             <motion.span
               key={index}
               variants={letterAnimation}
@@ -125,7 +125,7 @@ const WelcomePage = () => {
             marginTop: '-15px',
           }}
         >
-          Tourism CRM
+          Tour Management Solution
         </motion.span>
       </div>
       <motion.svg
