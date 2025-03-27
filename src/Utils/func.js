@@ -140,116 +140,6 @@ export const handleMakeId = (clientName, userName) => {
   return uniqueId
 }
 
-// Reacltime Database-------------------------------->
-
-// export const addLead = (uuid, lid) => {
-//     set(ref(db, `lead/${uuid}/wrapper`), lid)
-//         .then(() => {
-//             toast.success('Data submitted successfully!')
-//         }) // Data saved successfully!s
-//         .catch((error) => {
-//             console.log(error);
-//         }); // Data saved unsuccessful!
-// };
-
-// export const getAllLead = (setLeads) => {
-
-//     onValue(ref(db, '/lead'), (snapshot) => {
-//         setLeads([]);
-//         const data = snapshot.val();
-//         if (data !== null) {
-//             Object.values(data).map((user) => {
-//                 setLeads((oldArray) => [...oldArray, user]);
-//             });
-//         }
-//     });
-//     // after all the execution of the function, remove the listener
-//     return () => {
-//         remove(ref(db, url));
-//     };
-// };
-
-// export const getLeadPerUser = async (userUUID) => {
-//     const getNewLeads = () => {
-//         return new Promise((resolve) => {
-//             const newLeads = [];
-//             onValue(ref(db, "/lead"), (snapshot) => {
-//                 const data = snapshot.val();
-//                 if (data !== null) {
-//                     Object.values(data).map((user) => {
-//                         newLeads.push(user);
-//                     });
-//                     resolve(newLeads);
-//                 }
-//             });
-//         });
-//     };
-
-//     const leads = await getNewLeads();
-//     const filteredLeads = await leads.filter(lead => lead.wrapper.user.uuid === userUUID);
-//     return filteredLeads;
-// };
-
-// export const updateLeads = (uuid, lead) => {
-//     update(ref(db, `lead/${uuid}/wrapper`), lead)
-//         .then(() => {
-//             toast.success('Data updated successfully!');
-//         })
-//         .catch((error) => {
-//             toast.error(error);
-//         });
-// };
-
-// export const addKpi = (uuid, kpi) => {
-//     set(ref(db, `kpi/${uuid}/wrapper`), kpi)
-//         .then(() => {
-//             toast.success('Data submitted successfully!')
-//         }) // Data saved successfully!s
-//         .catch((error) => {
-//             console.log(error);
-//         }); // Data saved unsuccessful!
-// };
-
-// export const getAllKpi = async () => {
-//     const getNewKpi = () => {
-//         return new Promise((resolve) => {
-//             const newKpi = [];
-//             onValue(ref(db, "/kpi"), (snapshot) => {
-//                 const data = snapshot.val();
-//                 if (data !== null) {
-//                     Object.values(data).map((user) => {
-//                         newKpi.push(user);
-//                     });
-//                     resolve(newKpi);
-//                 }
-//             });
-//         });
-//     };
-
-//     const kpi = await getNewKpi();
-//     return kpi;
-// };
-
-// export const getKpiPerUuid = async (uuid) => {
-//     const getNewKpi = () => {
-//         return new Promise((resolve) => {
-//             const newKpi = [];
-//             onValue(ref(db, `/kpi/${uuid}/wrapper`), (snapshot) => {
-//                 const data = snapshot.val();
-//                 if (data !== null) {
-//                     Object.values(data).map((kpiData) => {
-//                         newKpi.push(kpiData);
-//                     });
-//                     resolve(newKpi);
-//                 }
-//             });
-//         });
-//     };
-
-//     const kpi = await getNewKpi();
-//     return kpi;
-// };
-
 // Firestore Database-------------------------------->
 
 export const addUser = async uuid => {
@@ -278,6 +168,8 @@ export const getAllUser = async setUsers => {
 }
 
 export const addLead = async (uuid, lid) => {
+  return 'test'
+
   try {
     await setDoc(doc(db, 'lead', uuid), {
       wrapper: lid,
@@ -330,6 +222,8 @@ export const getAllLead = async (filter, startDateStr, endDateStr) => {
 }
 
 export const deleteLeads = async uuidArray => {
+  return 'test'
+
   try {
     for (const uuid of uuidArray) {
       await deleteDoc(doc(db, 'lead', uuid))
@@ -450,6 +344,8 @@ export const getLeadPerUserUuid = async userUUID => {
 // }
 
 export const updateLeads = async (uuid, lead) => {
+  return 'test'
+
   try {
     // Directly fetch the existing lead data within the same function
     const leadDocRef = doc(db, 'lead', uuid)
@@ -516,6 +412,8 @@ export const getLeadPerUuid = async leaduuid => {
 }
 
 export const addClient = async (uuid, clientInput) => {
+  return 'test'
+
   try {
     await setDoc(doc(db, 'client', uuid), {
       wrapper: clientInput,
@@ -706,6 +604,8 @@ export const getAllClient = async () => {
 // }
 
 export const updateClient = async (uuid, updateData) => {
+  return 'test'
+
   try {
     const clientDocRef = doc(db, 'client', uuid)
     const clientDocSnapshot = await getDoc(clientDocRef)
@@ -753,6 +653,8 @@ export const getAllKpi = async () => {
 }
 
 export const addKpi = async (uuid, kpiInput) => {
+  return 'test'
+
   try {
     await setDoc(doc(db, 'kpi', uuid), {
       wrapper: kpiInput,
@@ -851,6 +753,8 @@ export const getKpiPerUser = async userName => {
 // }
 
 export const updateKpi = async (uuid, updateData) => {
+  return 'test'
+
   // console.log(uuid, updateData, 'uuid, updateData')
   try {
     const kpiDocRef = doc(db, 'kpi', uuid)
@@ -879,6 +783,8 @@ export const updateKpi = async (uuid, updateData) => {
 }
 
 export const updateKpiAssign = async (uuid, updateData) => {
+  return 'test'
+
   try {
     const kpiDoc = await getKpiPerUuid(uuid)
     if (!kpiDoc) {
@@ -900,6 +806,8 @@ export const updateKpiAssign = async (uuid, updateData) => {
 }
 
 export const deleteKpi = async uuid => {
+  return 'test'
+
   try {
     const kpiDoc = await getKpiPerUuid(uuid)
     if (!kpiDoc) {
@@ -914,6 +822,8 @@ export const deleteKpi = async uuid => {
 }
 
 export const queryKpi = async (uuid, kpiInput) => {
+  return 'test'
+
   try {
     await setDoc(doc(db, 'queryKpi', uuid), {
       wrapper: kpiInput,
@@ -979,6 +889,8 @@ export const getQueryKpiPerUuid = async kpiuuid => {
 }
 
 export const updateQueryKpi = async (uuid, updateData) => {
+  return 'test'
+
   try {
     const kpiDoc = await getQueryKpiPerUuid(uuid)
     if (!kpiDoc) {
@@ -995,6 +907,8 @@ export const updateQueryKpi = async (uuid, updateData) => {
 }
 
 export const addCompletedKpi = async (uuid, kpiInput) => {
+  return 'test'
+
   try {
     await setDoc(doc(db, 'completedKpi', uuid), {
       wrapper: kpiInput,
@@ -1020,6 +934,8 @@ export const getAllCompletedKpi = async () => {
 }
 
 export const deleteClient = async uidArray => {
+  return 'test'
+
   // console.log(uidArray, 'uidArray') // '0811231723EXE1TMC6', '0811231722EXE1TMC5', '0811231727EXE1TMC7', '0811231742EXE1TKI', '1111231237EXE1TS'], 'uidArray')
   try {
     if (!uidArray.length) {
@@ -1124,6 +1040,8 @@ export const getReceiptByUuid = async uuid => {
 }
 
 export const createReceipt = async (uuid, receiptId, receiptInput) => {
+  return 'test'
+
   // Firstly check if the receiptId already exists with the specified uuid
   // If exists, then keep the previous receipt and add the new receipt
   // If not exists, then create a new receipt with the specified receiptId
